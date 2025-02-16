@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <title>КЗСС</title>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="https://kzss.ru/wp-content/uploads/2023/04/tz.png" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="css/mainPage.css">
+        <script src="js/main.js"></script>
+    </head>    
+    <header class="header">
+        <a href="#" class="logo">КЗСС</a>
+        <nav class="navbar">
+            <a href="#home">Главная</a>
+            <a href="#services">Услуги</a>
+            <a href="#about">О компании</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+        <!-- Кнопка меню для мобильных устройств -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+    
+    <!-- Мобильное меню (изначально скрыто) -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="toggleMenu()">Главная</a>
+        <a href="#services" onclick="toggleMenu()">Услуги</a>
+        <a href="#about" onclick="toggleMenu()">О компании</a>
+        <a href="#contact" onclick="toggleMenu()">Контакты</a>
+    </div>
+    <section class="home">
+		<div id="home">
+            <div class="homeContainer">
+                <h1>Машиностроительное подразделение ООО «КЗСС» </h1>
+                <!-- <p>Технологические возможности предприятия и квалификация рабочих позволяют
+                    изготавливать детали и запасные части для предприятий металлургии, энергетики, 
+                    атомной, химической, нефтегазоперерабатывающей промышленностей и транспортного машиностроения, 
+                    осуществлять всю цепочку производства.
+                    </p> -->
+            </div>
+		</div>
+	</section>
+    <section class="services" id="services">
+        <h1 class="section-title">Услуги</h1> <!-- Заголовок добавлен -->
+    
+        <div class="service">
+            <img src="icons/tokar.svg" alt="Токарная обработка">
+            <h2>Токарная обработка</h2>
+            <p>Точность до 0,01 мм. Производим токарную обработку металла: обработка цилиндрических, конических и фасонных поверхностей, нарезание резьбы и создание отверстий.</p>
+            <table>
+                <tr><td>Мин. диаметр обработки</td><td>5 мм</td></tr>
+                <tr><td>Макс. диаметр обработки</td><td>300 мм</td></tr>
+                <tr><td>Мин. длина детали</td><td>5 мм</td></tr>
+                <tr><td>Макс. длина детали</td><td>1000 мм</td></tr>
+            </table>
+        </div>
+    
+        <div class="service">
+            <img src="icons/frezer.svg" alt="Фрезерная обработка">
+            <h2>Фрезерная обработка</h2>
+            <p>Создание сложных деталей из металла. Выполняем плоскостную, фасонную обработку, фрезеровку пазов, шпоночных соединений, гравировку.</p>
+            <table>
+                <tr><td>Макс. длина обработки</td><td>2500 мм</td></tr>
+                <tr><td>Макс. ширина обработки</td><td>1000 мм</td></tr>
+                <tr><td>Мин. толщина детали</td><td>2 мм</td></tr>
+            </table>
+        </div>
+    
+        <div class="service">
+            <img src="icons/construkt.svg" alt="Изготовление металлоконструкций">
+            <h2>Изготовление металлоконструкций</h2>
+            <p>Проектирование и производство металлических каркасов, лестниц, ограждений, балок, ферм и других конструкций.</p>
+            <table>
+                <tr><td>Материалы</td><td>Сталь, алюминий</td></tr>
+                <tr><td>Макс. вес конструкции</td><td>20 тонн</td></tr>
+                <tr><td>Толщина металла</td><td>до 50 мм</td></tr>
+            </table>
+        </div>
+    
+        <div class="service">
+            <img src="icons/detail.svg" alt="Изготовление деталей">
+            <h2>Изготовление деталей</h2>
+            <p>Производим детали по чертежам заказчика. Полный цикл обработки: токарные, фрезерные, сварочные и слесарные работы.</p>
+            <table>
+                <tr><td>Точность обработки</td><td>до 0.01 мм</td></tr>
+                <tr><td>Макс. размер детали</td><td>2000x2000 мм</td></tr>
+                <tr><td>Форматы чертежей</td><td>DWG, DXF, STEP</td></tr>
+            </table>
+        </div>
+    </section>
+    
+
+    
+    <section class="about">
+        <div id="about">
+            <h1>О нас</h1>
+            <p>Предприятие расположено в 20 км от Федеральной трассы М-11 Москва-С. Петербург.
+                Технологические возможности предприятия и квалификация рабочих позволяют
+                изготавливать детали и запасные части для предприятий.
+                Большой станочный парк позволяет выполнять работы по токарной, фрезерной обработке,
+                сверлильные, расточные и сварочные работы, распиловка и рубка металла.
+                На нашем предприятии созданы все условия для 
+                металлообработки на профессиональном уровне.
+                Токарная, фрезерная и сверлильная группа оборудования позволяет производить механическую обработку изделий диаметром до 300 мм и длиной до 1000 мм. 
+                Имеется возможность производить термическую обработку деталей размером 500 х400мм.
+                Участок изготовления рукавов НД и ВД.
+                Покрасочный цех.</p>
+        </div>
+        <div class="imageInfo">
+            <img id="slideshow" src="image1.jpg" alt="Производство">
+        </div>
+    </section>
+	<section class="contact">
+		<div id="contact">
+			<h1>Контакты</h1>
+		</div>
+	</section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>© 2025 ООО "Кольчугинский завод специальных сплавов"</p>
+            <a href="#home" class="scroll-top">⬆</a>
+        </div>
+    </footer>
+</html>
